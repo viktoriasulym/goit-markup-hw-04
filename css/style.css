@@ -147,6 +147,8 @@ button {
 }
 
 .header-contacts {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -162,12 +164,25 @@ button {
 }
 .contacts-item + .contacts-item {
   margin-left: 50px;
+  display: flex;
+}
+.main-contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 /* Hero section*/
 .hero {
   background-color: var(--third-bgc);
   text-align: center;
   padding: 200px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 .hero-title {
   margin: 0 auto;
@@ -230,6 +245,17 @@ button {
 .about-item:not(:last-child) {
   margin-right: 30px;
 }
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bgc);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 /* Gallery */
 .gallery-list {
   display: flex;
@@ -294,6 +320,41 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 16px;
+}
+.masters-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.masters-soc-item:last-child {
+  margin-right: 0;
+}
+
+.masters-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.masters-soc-icon {
+  fill: currentColor;
+}
+
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--second-title-color);
 }
 /* Navigation */
 .features-list {
@@ -304,6 +365,11 @@ button {
 }
 .nav-item:not(:last-child) {
   margin-right: 8px;
+}
+.button.nav:hover,
+.button.nav:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .navigation-list .button {
   padding: 6px 22px;
@@ -349,6 +415,60 @@ button {
 .features-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.features-item .link {
+  display: block;
+}
+
+.features-item .link:hover,
+.features-item .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Clients-title*/
+
+.clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--title-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+}
+
+.clients-item:last-child {
+  margin-right: 0;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--icon-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 /* Footer */
 .footer-address {
@@ -393,4 +513,54 @@ button {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+}
+
+.join-list {
+  display: flex;
+}
+.footer-join {
+  margin-left: 70px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+}
+.join-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+  color: var(--second-title-color);
+}
+
+.join-item:last-child {
+  margin-right: 0;
+}
+
+.footer-soc-icon {
+  fill: currentColor;
+}
+
+.join-item:hover,
+.join-item:focus {
+  background-color: var(--accent-color);
+}
+/* .container.footer-navigation {
+  display: flex;
+} */
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
