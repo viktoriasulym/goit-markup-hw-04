@@ -255,6 +255,10 @@ button {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+.about-icon {
+  widht: 70px;
+  height: 70px;
+}
 
 /* Gallery */
 .gallery-list {
